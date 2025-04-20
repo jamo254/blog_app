@@ -345,7 +345,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   brakeman
-  capistrano (~> 3.17)
+  capistrano
   capistrano-bundler (~> 2.1)
   capistrano-rails (~> 1.6)
   capistrano-rbenv (~> 2.2)

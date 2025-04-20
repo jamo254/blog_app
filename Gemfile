@@ -44,7 +44,7 @@ group :development, :test do
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false  
 
-  gem 'capistrano', '~> 3.17'
+  gem 'capistrano'
   gem 'capistrano-rails', '~> 1.6'
   gem 'capistrano-rbenv', '~> 2.2'
   gem 'capistrano3-puma', '~> 5.2'
