@@ -44,11 +44,15 @@ group :development, :test do
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false  
 
-  gem 'mina', '1.2.4'
+  gem 'capistrano', '~> 3.17'
+  gem 'capistrano-rails', '~> 1.6'
+  gem 'capistrano-rbenv', '~> 2.2'
+  gem 'capistrano3-puma', '~> 5.2'
+  gem 'capistrano-bundler', '~> 2.1'
 end
 
 group :production do
-  gem "pg", "~> 1.1"
+  
   gem "unicorn"
 end
 
@@ -64,3 +68,5 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+
