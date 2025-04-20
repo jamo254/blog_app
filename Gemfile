@@ -42,8 +42,17 @@ group :development, :test do
   gem "brakeman", require: false
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
-  gem "rubocop-rails-omakase", require: false
+  gem "rubocop-rails-omakase", require: false  
+
+  gem 'mina', '1.2.4'
 end
+
+group :production do
+  gem "pg", "~> 1.1"
+  gem "unicorn"
+end
+
+
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
